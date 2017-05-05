@@ -1,0 +1,31 @@
+<% include ../partials/boilerplate.ejs %>
+
+<div class = 'container'>
+<h1 id = 'rest'> RESTAURANTS</h1>
+<div class = 'food-info'>
+
+<% cityData.forEach(function(food) { %>
+  <p><%= food.food %> </p></br>
+  <div id = 'actions'>
+  <a href = '/travel/edit/<%= food.id %>' id = 'edit'> Edit</a>
+  <form method='POST' action='/travel/<%= food.food %>?_method=DELETE'>
+     <input type='submit' value='Delete it!' id = 'del' />
+     </div>
+     </form>
+<% }) %>
+</div>
+
+<h1 id = 'rest'> TOURIST ATTRACTIONS</h1>
+<div class = 'att-info'>
+
+<% cityData.forEach(function(attraction) { %>
+  <p><%= attraction.attraction %></p></br>
+  <a href = '/travel/edit/<%= attraction.id %>' id= 'edit'> Edit </a>
+  <form method = 'POST' action = '/travel/<%= attraction.attraction %>?_method=DELETE'>
+    <input type = 'submit' value = 'Delete it!' id = 'del' />
+    </form>
+<% }) %>
+</div>
+</div>
+
+<% include ../partials/end.ejs %>

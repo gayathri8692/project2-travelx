@@ -1,0 +1,10 @@
+<% include ../partials/boilerplate.ejs %>
+
+<form method= 'POST' action = '/travel/<%= id %>?_method=PUT' id= 'edit-container' >
+  <input name = 'food' type = 'text' value = '<%= cityData.food %>' id = 'info-edit' />
+  <input name = 'attraction' type = 'text' value = '<%=cityData.attraction %>' id= 'info-edit' />
+  <input type = 'submit' value = 'EDIT IT!' id = 'button-edit'/>
+  </form>
+
+
+<% include ../partials/end.ejs %>

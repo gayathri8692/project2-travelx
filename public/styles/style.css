@@ -1,0 +1,201 @@
+body {
+  background: url('../images/nyc.jpg');
+  background-size: cover;
+}
+
+h2#name {
+  font-size: 40px;
+  color: orangered;
+  text-align: center;
+  padding: 40px;
+  font-family: 'Bungee Inline', cursive;
+}
+
+
+h2#name::after{
+ content: 'X';
+ color: orange;
+}
+
+
+nav.tabs {
+  font-size: 30px;
+}
+
+a.auth {
+  color: goldenrod;
+  text-decoration-line: none;
+  padding: 20px;
+  position: initial;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+div#list {
+  display: flex;
+  justify-content: space-around;
+}
+
+select#state-list {
+  height: 40px;
+  width: 20%;
+  margin: 30px;
+  font-size: 20px;
+  color: darkblue;
+}
+
+select#city-list {
+  height: 40px;
+  width: 20%;
+  margin: 30px;
+  font-size: 20px;
+  color: darkblue;
+}
+
+
+/******LOGIN*****/
+
+div#form-log {
+  display: flex;
+  justify-content: center;
+  margin-top: 25%;
+}
+
+input#user {
+  height: 20px;
+  width: 140px;
+}
+
+input#pass {
+  height: 20px;
+  width: 140px;
+  margin: 0 40px;
+}
+
+input#log {
+  height: 30px;
+  width: 110px;
+}
+
+form#register {
+  text-align: center;
+  margin-top: 25%;
+}
+
+/********INFO*****/
+
+div.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+div.food-info {
+  margin-top: 50px;
+  position: absolute;
+  height: 500px;
+  width: 450px;
+  border: 7px solid wheat;
+  overflow: scroll;
+  background: rgba(124, 78, 57, 0.5);
+}
+
+div.att-info {
+  margin-top: 50px;
+  margin-left: 50%;
+  position: absolute;
+  height: 500px;
+  width: 450px;
+  border: 7px solid wheat;
+  overflow: scroll;
+  background: rgba(124, 78, 57, 0.5);
+}
+ 
+h1#rest {
+  font-size: 30px;
+  color: mediumslateblue;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  height: 30px;
+}
+
+h1#rest:hover {
+  background: rgba(875, 74, 38,0.5)
+}
+
+input#del {
+  font-size: 12px;
+  color: white;
+  height: 25px;
+  width: 70px;
+  background: pink;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  cursor: pointer;
+}
+
+input#del:hover {
+  color: red;
+}
+
+
+a#edit {
+  text-decoration-line: none;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+a#edit:hover {
+  color: red;
+}
+
+p {
+  font-size: 22px;
+  color: mediumvioletred;
+  font-weight: bolder;
+  line-height: 35px;
+  background: rgba(084, 31, 91,0.5);
+  margin: 20px 0;
+}
+
+p:hover{
+  background: rgba(59, 181, 21,0.5)
+}
+
+
+
+
+/********EDIT PAGE******/
+input#info-edit {
+  height: 100px;
+  width: 400px;
+  font-size: 14px;
+  margin: 20px;
+  overflow: scroll;
+  border-radius: 20px;
+}
+
+form#edit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+input#button-edit {
+  height: 30px;
+  width: 100px;
+  font-size: 20px;
+  background: black;
+  border: 1px dotted black;
+  color: white;
+  margin-top: 55px;
+  cursor: pointer;
+  border-radius: 15px;
+}
