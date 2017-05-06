@@ -8,7 +8,7 @@
   <p><%= food.food %> </p></br>
   <div id = 'actions'>
   <a href = '/travel/edit/<%= food.id %>' id = 'edit'> Edit</a>
-  <form method='POST' action='/travel/<%= food.food %>?_method=DELETE'>
+  <form method='POST' action='/travel/<%= food.id %>?_method=DELETE'>
      <input type='submit' value='Delete it!' id = 'del' />
      </div>
      </form>
@@ -21,7 +21,7 @@
 <% cityData.forEach(function(attraction) { %>
   <p><%= attraction.attraction %></p></br>
   <a href = '/travel/edit/<%= attraction.id %>' id= 'edit'> Edit </a>
-  <form method = 'POST' action = '/travel/<%= attraction.attraction %>?_method=DELETE'>
+  <form method = 'POST' action = '/travel/<%= attraction.id %>?_method=DELETE'>
     <input type = 'submit' value = 'Delete it!' id = 'del' />
     </form>
 <% }) %>

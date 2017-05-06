@@ -19,8 +19,8 @@ Travel.update = (info, id) => {
   return db.none(
     `
       UPDATE city_tbl SET
-      food = ($1),
-      attraction = ($2)
+      food = string_to_array($1, ','),
+      attraction = string_to_array($2, ',')
       WHERE id = $3
     `,
     [info.food,info.attraction, id]
@@ -43,8 +43,8 @@ Travel.destroy = id => {
   return db.none(
     `
      UPDATE city_tbl SET
-     food = ''
-     WHERE food = $1
+     food = string_to_array('', ',')
+     WHERE id = $1
     `,
     [id]
   );

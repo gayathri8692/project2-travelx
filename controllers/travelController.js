@@ -56,8 +56,8 @@ controller.update = (req, res) => {
   console.log(req.body);
   Travel.update(
     {
-      food: req.body.food(),
-      attraction: req.body.attraction(),
+      food: req.body.food,
+      attraction: req.body.attraction,
     },
     req.params.id
   )
