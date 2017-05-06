@@ -10,6 +10,11 @@ Travel.findAllCity = id => {
   return db.query('SELECT * FROM city_tbl ORDER BY id ASC');
 };
 
+Travel.findAllCityById = id => {  //the values can not be selected by strings so using foriegn key get the id first and store in a variable and query them using the second table's id
+  var state_id = db.query('SELECT id FROM state_tbl WHERE state = $1', [id]);
+  return db.query('SELECT * FROM city_tbl ORDER BY id ASC WHERE state_id = $1', [state_id]);
+};
+
 Travel.findInfo = id => {
   return db.oneOrNone('SELECT food, attraction, id FROM city_tbl WHERE id = $1', [id]);
 
@@ -26,17 +31,6 @@ Travel.update = (info, id) => {
     [info.food,info.attraction, id]
   );
 };
-
-// Travel.update = (attraction, id) => {
-//   return db.none(
-//     `
-//       UPDATE city_tbl SET
-//       attraction = $1,
-//       WHERE id = $2
-//     `,
-//     [attraction.attraction, id]
-//   );
-// };
 
 
 Travel.destroy = id => {
