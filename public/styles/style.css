@@ -4,16 +4,17 @@ body {
 }
 
 a#home {
-  font-size: 28px;
-  color: white;
+  font-size: 24px;
+  color: black;
   font-weight: bold;
   display: flex;
   flex-direction: row-reverse;
   padding: 30px;
+  font-family: 'Bungee Inline', cursive;
 }
 
 h2#name {
-  font-size: 40px;
+  font-size: 50px;
   color: rgba(135, 3, 255, 1);
   text-align: center;
   padding: 40px;
@@ -28,12 +29,13 @@ h2#name::after{
 
 nav.tabs {
   font-size: 30px;
+  /*height: 35px;*/
 }
 
 a.auth {
   color: black;
   text-decoration-line: none;
-  padding: 20px;
+  padding: 5px;
   display: inline-block;
   margin-left: 150px;
   justify-content: space-around;
@@ -108,12 +110,13 @@ div.container {
   display: flex;
   justify-content: space-between;
   padding: 80px;
+  padding-top: 0px;
 }
 
 div.food-info {
   margin-top: 50px;
   position: absolute;
-  height: 500px;
+  height: 460px;
   width: 450px;
   border: 7px solid black;
   border-radius: 30px;
@@ -125,7 +128,7 @@ div.att-info {
   margin-top: 50px;
   margin-left: 50%;
   position: absolute;
-  height: 500px;
+  height: 460px;
   width: 450px;
   border: 7px solid black;
   border-radius: 30px;
@@ -135,16 +138,17 @@ div.att-info {
  
 h1#rest {
   font-size: 30px;
-  color: navy;
+  color: black;
   font-weight: bold;
   margin-bottom: 30px;
   text-align: center;
   position: relative;
   margin-left: 100px;
   height: 30px;
-  border: 3px solid black;
-  border-radius: 30px;
+  /*border: 2px solid black;*/
+  /*border-radius: 30px;*/
   background: rgba(238, 238, 238,0.5);
+  font-family: 'Bungee Inline', cursive;
 }
 
 h1#rest:hover {
@@ -156,7 +160,7 @@ input#del {
   color: white;
   height: 25px;
   width: 70px;
-  background: pink;
+  background: black;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -184,15 +188,21 @@ a#edit:hover {
 
 p {
   font-size: 22px;
-  color: forestgreen;
+  color: black;
   font-weight: bolder;
   line-height: 35px;
-  background: rgba(084, 31, 91,0.5);
+  background: rgba(255, 255, 255, 0.5);
   margin: 20px 0;
+  /*z-index: 100;*/
+ 
 }
 
 p:hover{
   background: rgba(239, 881, 411,0.5);
+  z-index: 100;
+  transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+
 }
 
 
@@ -211,7 +221,7 @@ input#info-edit {
 form#edit-container {
   display: flex;
   justify-content: center;
-  margin-top: 18%;
+  /*margin-top: 18%;*/
 }
 
 input#button-edit {
@@ -227,11 +237,25 @@ input#button-edit {
 }
 
 h4#edit-page {
-  font-size: 24px;
-  color: navy;
+  font-size: 28px;
+  color: black;
   font-weight: bold;
-  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15%;
   text-align: center;
+  font-family: 'Bungee Inline', cursive;
+}
+
+h4#edit-pagePlaces {
+  font-size: 28px;
+  color: black;
+  font-weight: bold;
+  margin-left: 25%;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Bungee Inline', cursive;
 }
 
 h3#info-heading {

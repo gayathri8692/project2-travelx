@@ -29,6 +29,7 @@ router.get('/register', (req, res) => {
     documentTitle: 'Travelx registration',
   });
 });
+
 router.post('/register', controller.create);
 router.post(
   '/login',
@@ -38,5 +39,11 @@ router.post(
     failureFlash: false,
   })
 );
+
+// router.get('/error', (req, res) => {
+//   res.render('auth/authFail', {
+//     documentTitle: 'Travelx error',
+//   });
+// });
 
 module.exports = router;
