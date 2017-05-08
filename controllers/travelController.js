@@ -82,7 +82,6 @@ controller.edit = (req, res) => {
 };
 
 
-
 controller.update = (req, res) => {
   console.log(req.params);
   console.log(req.body);
