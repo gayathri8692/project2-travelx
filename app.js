@@ -52,7 +52,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //setting routes
-
+app.get('/', function(req,res) {
+  res.redirect('/travel');
+});
 app.use('/travel', travelRoutes);
 app.use('/auth', authRoutes);
 app.use('/user', userRoutes);
