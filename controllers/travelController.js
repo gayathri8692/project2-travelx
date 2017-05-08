@@ -19,6 +19,41 @@ controller.index = (req, res) => {
 });
 };
 
+controller.getCity = (req, res) => {
+  console.log(req.params.id);
+  Travel.findAllCityById(req.params.id)
+  .then(city_tbl => {
+   // console.log(res);
+    res.render('travel/travel-city', {
+      documentTitle: 'travelx',
+      cityData: city_tbl,
+    });
+  })
+  .catch(err => {
+    console.log('error');
+    res.status(400).json(err);
+  });
+};
+
+// controller.getCity = (req, res) => {
+//   Travel.findAll()
+//   .then(state_tbl => {
+//     Travel.findAllCityById()
+//       .then(city_tbl => {
+//         console.log('hi!');
+//         res.render('index',{
+//           documentTitle: 'travelx',
+//           stateData: state_tbl,
+//           cityData: city_tbl,
+//         });
+      
+//       })
+//   .catch(err => {
+//     res.status(400).json(err);
+//   });
+// });
+// };
+
 controller.show = (req, res) => {
   Travel.findAllCity()
   .then(city_tbl => {
@@ -28,6 +63,21 @@ controller.show = (req, res) => {
       cityData: city_tbl,
       });
     })
+  .catch(err => {
+    res.status(400).json(err);
+  });
+};
+
+controller.info = (req, res) => {
+  Travel.findCityInfo(req.params.id)
+  .then(city_tbl => {
+    //console.log(city_tbl);
+    res.render('travel/travel-edit', {
+      documentTitle: 'travelx',
+      cityData: city_tbl,
+      id: city_tbl.id,
+    });
+  })
   .catch(err => {
     res.status(400).json(err);
   });

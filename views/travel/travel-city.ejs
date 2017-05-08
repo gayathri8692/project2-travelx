@@ -1,21 +1,22 @@
-<% include ./partials/boilerplate.ejs %>
+<% include ../partials/boilerplate.ejs %>
 <h2 id= 'name'>TRAVEL</h2>
 <nav class = 'tabs'>
   <a href='/auth/register' class = 'auth'>SIGN UP!</a>
   <a href='/auth/login' class ='auth'>Log in!!</a>
   <a href='/auth/logout' class = 'auth'>Say Bye! And Log out!</a>
 </nav>
-<h2 id = 'select'>SELECT STATE</h2>
+<h2 id = 'select'>SELECT CITY</h2>
 <div id = 'list'>
-<select id = 'state-list'>
-  <% stateData.forEach(function(states) { %>
-  <option>
-  <%= states.state %>
-  </option>  
+<select id = 'city-list'>
+  <% cityData.forEach(function(cities) { %>
+   
+      <option>
+      <%= cities.city %>
+      </option>
+   
  <% }) %>
 </select>
-
 </div>
-<script src = '/static/js/state.js'></script>
 <script src = '/static/js/main.js'></script>
-<% include ./partials/end.ejs %>
+<script src = '/static/js/info.js'></script>
+<% include ../partials/end.ejs %>

@@ -3,9 +3,18 @@ body {
   background-size: cover;
 }
 
+a#home {
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 30px;
+}
+
 h2#name {
   font-size: 40px;
-  color: purple;
+  color: rgba(135, 3, 255, 1);
   text-align: center;
   padding: 40px;
   font-family: 'Bungee Inline', cursive;
@@ -17,23 +26,34 @@ h2#name::after{
  color:yellow;
 }
 
-
 nav.tabs {
   font-size: 30px;
 }
 
 a.auth {
-  color: goldenrod;
+  color: black;
   text-decoration-line: none;
   padding: 20px;
-  position: initial;
-  display: flex;
-  flex-direction: row-reverse;
+  display: inline-block;
+  margin-left: 150px;
+  justify-content: space-around;
+  border: 3px solid black;
+  border-radius: 60px;
+  background-color: rgba(76, 216, 229, 0.5);
 }
 
 div#list {
   display: flex;
   justify-content: space-around;
+}
+
+h2#select {
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  margin-top: 30px;
+  font-family: 'Bungee Inline', cursive;
 }
 
 select#state-list {
@@ -95,7 +115,8 @@ div.food-info {
   position: absolute;
   height: 500px;
   width: 450px;
-  border: 7px solid wheat;
+  border: 7px solid black;
+  border-radius: 30px;
   overflow: scroll;
   background: rgba(124, 78, 57, 0.5);
 }
@@ -106,23 +127,28 @@ div.att-info {
   position: absolute;
   height: 500px;
   width: 450px;
-  border: 7px solid wheat;
+  border: 7px solid black;
+  border-radius: 30px;
   overflow: scroll;
   background: rgba(124, 78, 57, 0.5);
 }
  
 h1#rest {
   font-size: 30px;
-  color: mediumslateblue;
+  color: navy;
   font-weight: bold;
   margin-bottom: 30px;
   text-align: center;
   position: relative;
+  margin-left: 100px;
   height: 30px;
+  border: 3px solid black;
+  border-radius: 30px;
+  background: rgba(238, 238, 238,0.5);
 }
 
 h1#rest:hover {
-  background: rgba(875, 74, 38,0.5)
+  background: rgba(255, 185, 44,0.5)
 }
 
 input#del {
@@ -166,7 +192,7 @@ p {
 }
 
 p:hover{
-  background: rgba(119, 81, 411,0.5);
+  background: rgba(239, 881, 411,0.5);
 }
 
 
@@ -185,7 +211,7 @@ input#info-edit {
 form#edit-container {
   display: flex;
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 18%;
 }
 
 input#button-edit {
@@ -198,4 +224,21 @@ input#button-edit {
   margin-top: 55px;
   cursor: pointer;
   border-radius: 15px;
+}
+
+h4#edit-page {
+  font-size: 24px;
+  color: navy;
+  font-weight: bold;
+  margin-top: 50px;
+  text-align: center;
+}
+
+h3#info-heading {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+
 }

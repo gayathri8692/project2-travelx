@@ -1,10 +1,13 @@
 <% include ../partials/boilerplate.ejs %>
 
+
+
 <div class = 'container'>
 <h1 id = 'rest'> RESTAURANTS</h1>
 <div class = 'food-info'>
 
 <% cityData.forEach(function(food) { %>
+<h3 id = 'info-heading'><%= food.city %></h3>
   <p><%= food.food %> </p></br>
   <div id = 'actions'>
   <a href = '/travel/edit/<%= food.id %>' id = 'edit'> Edit</a>
@@ -19,6 +22,7 @@
 <div class = 'att-info'>
 
 <% cityData.forEach(function(attraction) { %>
+<h3 id = 'info-heading'><%= attraction.city %></h3>
   <p><%= attraction.attraction %></p></br>
   <a href = '/travel/edit/<%= attraction.id %>' id= 'edit'> Edit </a>
   <form method = 'POST' action = '/travel/<%= attraction.id %>?_method=DELETE'>
@@ -27,5 +31,5 @@
 <% }) %>
 </div>
 </div>
-
+<script src = '/static/js/main.js'></script>
 <% include ../partials/end.ejs %>

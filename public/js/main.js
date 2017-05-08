@@ -2,23 +2,18 @@ console.log('app js is connected');
 window.onload = function () {        //stack overflow for background change in few sec
 
     function changeImage() {   
-        var BackgroundImg = ["./static/images/ari.jpg",
-            "./static/images/hawaii.jpg",
-            "./static/images/nyc.jpg",
-            "./static/images/sf.jpg"
+        var BackgroundImg = ["/static/images/ari.jpg",
+            "/static/images/hawaii.jpg",
+            "/static/images/nyc.jpg",
+            "/static/images/sf.jpg"
         ];
         var i = Math.floor((Math.random() * 4));
         //console.log(i);
         document.body.style.backgroundImage = 'url("' + BackgroundImg[i] + '")';
     }
-    window.setInterval(changeImage, 2000);
+    window.setInterval(changeImage, 3000);  
+
 }
 
-var state = document.querySelector('#state-list');
-var city = document.querySelector('#city-list');
-state.addEventListener('change', startFunc);   //used 'change' event to capture the values in dropdown after the user chooses it
-function startFunc() {
- var res = state[state.selectedIndex].value;
- 
- console.log(res);
- }
+
+
