@@ -1,7 +1,4 @@
 
-
-
--- city_tbl.food{id}
 INSERT INTO city_tbl (city, state_id, food, attraction) VALUES
 ('New York City', 1, '{Serendipity, Yo Sushi, Benihana}', '{Brooklyn Bridge, Central Park, World Trade Center}'),
 ('Buffalo', 1, '{Lombardo, The Left Bank, Tempo}', '{KeyBank Center, Canalside, The Buffalo Zoo}'),

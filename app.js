@@ -35,7 +35,6 @@ app.set('view engine', 'ejs');
 
 //Setting up views
 app.use('/static', express.static(path.join(__dirname, 'public')));
-app.use('/info', express.static(path.join(__dirname, 'views')));
 //setting up logger
 app.use(logger('dev'));
 app.use(cookieParser('hello'));
@@ -53,11 +52,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //setting routes
-app.get('/', function(req,res) {
-  res.render('index', {
-    documentTitle: 'travelx'
-  });
-});
+
 app.use('/travel', travelRoutes);
 app.use('/auth', authRoutes);
 app.use('/user', userRoutes);

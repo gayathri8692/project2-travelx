@@ -1,4 +1,4 @@
-\connect travelapp
+
 
 CREATE TABLE IF NOT EXISTS state_tbl (
   id BIGSERIAL PRIMARY KEY,
