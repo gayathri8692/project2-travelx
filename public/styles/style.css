@@ -37,7 +37,7 @@ a.auth {
   text-decoration-line: none;
   padding: 5px;
   display: inline-block;
-  margin-left: 150px;
+  margin-left: 185px;
   justify-content: space-around;
   border: 3px solid black;
   border-radius: 60px;
@@ -50,7 +50,7 @@ div#list {
 }
 
 h2#select {
-  font-size: 26px;
+  font-size: 32px;
   text-align: center;
   font-weight: bold;
   color: black;
