@@ -8,7 +8,6 @@ travelRoutes.get('/', controller.index);
 travelRoutes.get('/info/:id', controller.info);
 travelRoutes.get('/info', controller.show);
 travelRoutes.get('/edit/:id', controller.edit);
-// travelRoutes.put('/:id', controller.update);
 travelRoutes.get('/state_name/:id', controller.getCity);
 travelRoutes.put('/:id', authHelpers.loginRequired, controller.update);
 travelRoutes.delete('/:id',  controller.destroy);

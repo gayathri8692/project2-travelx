@@ -2,9 +2,9 @@
 <h4 id= 'edit-page'>RESTAURANTS</h4>
 <h4 id = 'edit-pagePlaces'>PLACES TO VISIT</h4>
 <form method= 'POST' action = '/travel/<%= id %>?_method=PUT' id= 'edit-container' >
-
+<ul>
   <input name = 'food' type = 'text' value = '<%= cityData.food %>' id = 'info-edit' />
-
+</ul>
   <input name = 'attraction' type = 'text' value = '<%=cityData.attraction %>' id= 'info-edit' />
   <input type = 'submit' value = 'UPDATE!' id = 'button-edit'/>
   </form>
