@@ -282,3 +282,7 @@ div.footer {
 p#foot:hover {
   color: blue;
 }
+
+option#selHolder {
+  color: black;
+}

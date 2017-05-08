@@ -4,8 +4,8 @@
 <h2 id = 'select'>SELECT CITY</h2>
 <div id = 'list'>
 <select id = 'city-list'>
+<option placeholder = '--SELECT CITY--' id = 'selHolder'></option>
   <% cityData.forEach(function(cities) { %>
-   
       <option>
       <%= cities.city %>
       </option>

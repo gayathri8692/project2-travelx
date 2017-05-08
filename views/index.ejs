@@ -7,8 +7,10 @@
 </nav>
 <h2 id = 'select'>SELECT STATE</h2>
 <div id = 'list'>
-<select id = 'state-list'>
+<select id = 'state-list' >
+<option placeholder = '--SELECT STATE--' id = 'selHolder'></option>
   <% stateData.forEach(function(states) { %>
+  
   <option>
   <%= states.state %>
   </option>  
