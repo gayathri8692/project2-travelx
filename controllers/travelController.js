@@ -35,24 +35,6 @@ controller.getCity = (req, res) => {
   });
 };
 
-// controller.getCity = (req, res) => {
-//   Travel.findAll()
-//   .then(state_tbl => {
-//     Travel.findAllCityById()
-//       .then(city_tbl => {
-//         console.log('hi!');
-//         res.render('index',{
-//           documentTitle: 'travelx',
-//           stateData: state_tbl,
-//           cityData: city_tbl,
-//         });
-      
-//       })
-//   .catch(err => {
-//     res.status(400).json(err);
-//   });
-// });
-// };
 
 controller.show = (req, res) => {
   Travel.findAllCity()
