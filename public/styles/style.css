@@ -1,3 +1,9 @@
+
+/*********Desktop version*********/
+/*********************************/
+/*********************************/
+
+
 body {
   background: url('../images/nyc.jpg');
   background-size: cover;
@@ -17,7 +23,7 @@ h2#name {
   font-size: 50px;
   color: rgba(135, 3, 255, 1);
   text-align: center;
-  padding: 40px;
+  padding: 30px;
   font-family: 'Bungee Inline', cursive;
 }
 
@@ -29,18 +35,20 @@ h2#name::after{
 
 nav.tabs {
   font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   /*height: 35px;*/
 }
 
 a.auth {
   color: black;
   text-decoration-line: none;
+  text-align: center;
   padding: 5px;
-  display: inline-block;
-  margin-left: 185px;
-  justify-content: space-around;
+  width: 150px;
   border: 3px solid black;
-  border-radius: 60px;
+  border-radius: 10px;
   background-color: rgba(76, 216, 229, 0.5);
 }
 
@@ -70,7 +78,7 @@ h2#select {
 select#state-list {
   height: 40px;
   width: 20%;
-  margin: 30px;
+  margin-top: 70px;
   font-size: 20px;
   color: darkblue;
 }
@@ -294,4 +302,133 @@ p#foot:hover {
 
 option#selHolder {
   color: black;
+}
+
+
+
+/*********Mobile version*********/
+/*********************************/
+/*********************************/
+
+body {
+  background: url('../images/nyc.jpg');
+  /*background-size: cover;*/
+}
+
+a#home {
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  font-family: 'Bungee Inline', cursive;
+}
+
+h2#name {
+  font-size: 30px;
+  color: rgba(135, 3, 255, 1);
+  text-align: center;
+  padding: 30px;
+  font-family: 'Bungee Inline', cursive;
+}
+
+h2#name::after{
+ content: 'X';
+ color:yellow;
+}
+
+nav.tabs {
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /*height: 35px;*/
+}
+
+a.auth {
+  color: black;
+  text-decoration-line: none;
+  text-align: center;
+  padding: 5px;
+  width: 70px;
+  line-height: 20px;
+  height: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: rgba(76, 216, 229, 0.5);
+}
+
+div#list {
+  display: flex;
+  justify-content: space-around;
+}
+
+select#state-list {
+  height: 20px;
+  width: 130px;
+  margin-top: 70px;
+  font-size: 12px;
+  text-align: center;
+  color: darkblue;
+  background-color: white;
+}
+
+select#city-list {
+  height: 20px;
+  width: 130px;
+  margin: 30px;
+  font-size: 12px;
+  color: darkblue;
+  background-color: white;
+}
+
+
+/******LOGIN*****/
+
+div#form-log {
+  display: flex;
+}
+
+form#edit-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+
+input#user {
+  margin: 30px;
+}
+
+input#pass {
+  margin: 30px;
+}
+
+input#log {
+  height: 30px;
+  width: 70px;
+  font-size: 14px;
+  margin-left: 70px;
+  background-color: white;
+}
+
+form#register {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+input#in {
+   margin: 10px;
+}
+
+
+input#reg {
+  height: 30px;
+  margin: 10px;
+  width: 90px;
+  font-size: 14px;
+  margin-left: 70px;
+  background-color: white;
 }
