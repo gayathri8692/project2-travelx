@@ -14,26 +14,3 @@ CREATE TABLE IF NOT EXISTS city_tbl (
  );
 
 
-
- CREATE TABLE units (
-id BIGSERIAL PRIMARY KEY,
-type VARCHAR (255),
-lecture_title VARCHAR(1024),
-summary VARCHAR(1024),
-gh_url VARCHAR(1024), 
-unit INTEGER REFERENCES unit(id),
-resources INTEGER REFERENCES res(id),
-
-
-
-
- CREATE TABLE units (
-id BIGSERIAL PRIMARY KEY,
-units VARCHAR(50)
-);
-
-
-CREATE TABLE res (
-  id BIGSERIAL PRIMARY KEY,
-
-)
